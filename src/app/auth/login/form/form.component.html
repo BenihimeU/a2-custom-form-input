@@ -3,8 +3,5 @@
     <form-input [formobj]="loginForm" subname="username"></form-input>
     <form-input [formobj]="loginForm" subname="password"></form-input>
   </div>
-  <button md-raised-button type="submit">Submit</button>
+  <button md-raised-button type="submit" (click)="onLoginPress($event)">Submit</button>
 </form>
-<pre>{{loginForm.value | json}}</pre>
-<pre>{{loginForm.get('username').valid| json}}</pre>
-<pre>{{loginForm.get('password').valid| json}}</pre>

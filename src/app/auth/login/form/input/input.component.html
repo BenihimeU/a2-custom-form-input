@@ -1,12 +1,12 @@
 <md-input-container>
   <input mdInput type="text" [formControl]="control" required />
   <md-hint [hidden]="control.pristine || control.valid">
-        <span [hidden]="!control.errors?.required">
-            This is required
-        </span>
+    <span [hidden]="!control.errors?.required">
+      This is required
+    </span>
     <span [hidden]="!control.errors?.pattern">
-            Please enter valid input
-        </span>
+      Please enter valid input
+    </span>
   </md-hint>
 </md-input-container>
 

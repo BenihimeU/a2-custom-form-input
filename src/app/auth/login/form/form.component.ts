@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
@@ -7,6 +7,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  @Output() onLoginSuccess = new EventEmitter<string>();
   creds: string;
   loginForm: FormGroup;
   constructor(public  formBuilder:FormBuilder) {
@@ -20,6 +21,8 @@ export class FormComponent implements OnInit {
   }
 
   onLoginPress (){
-    console.log(this.creds);
+    if(this.loginForm.valid){
+      this.onLoginSuccess.emit(this.loginForm.value.username);
+    }
   }
 }
