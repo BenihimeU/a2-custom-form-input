@@ -33,6 +33,7 @@ import {
   MdTooltipModule
 } from "@angular/material";
 import {FormsModule} from "@angular/forms";
+import {Angular2FontawesomeModule} from "angular2-fontawesome";
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import {FormsModule} from "@angular/forms";
     MdTableModule,
     MdTabsModule,
     MdToolbarModule,
-    MdTooltipModule
+    MdTooltipModule,
+    Angular2FontawesomeModule
   ],
 
   exports: [
@@ -104,6 +106,7 @@ import {FormsModule} from "@angular/forms";
     MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
+    Angular2FontawesomeModule
   ],
   providers: []
 })
