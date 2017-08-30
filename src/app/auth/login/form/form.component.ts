@@ -21,8 +21,6 @@ export class FormComponent implements OnInit {
   }
 
   onLoginPress (){
-    if(this.loginForm.valid){
       this.onLoginSuccess.emit(this.loginForm.value.username);
-    }
   }
 }

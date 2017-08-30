@@ -1,0 +1,10 @@
+.banner{
+    max-width: 25%;
+    margin: auto;
+    display: block;
+}
+/deep/.mat-card-header-text{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}

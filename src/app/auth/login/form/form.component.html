@@ -1,7 +1,7 @@
-<form [formGroup]="loginForm">
+<form [formGroup]="loginForm" class="example-form">
   <div>
     <form-input [formobj]="loginForm" subname="username"></form-input>
-    <form-input [formobj]="loginForm" subname="password"></form-input>
+    <form-input [formobj]="loginForm" subname="password" [type]="'password'"></form-input>
   </div>
-  <button md-raised-button type="submit" (click)="onLoginPress($event)">Submit</button>
+  <button md-raised-button color="primary" type="submit" (click)="onLoginPress($event)" [disabled]="!loginForm.valid">Submit</button>
 </form>
