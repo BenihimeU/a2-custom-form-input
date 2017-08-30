@@ -22,6 +22,6 @@ export class FormComponent implements OnInit {
   }
 
   onLoginPress (){
-      this.router.navigate(['dashboard', {info: {user: this.loginForm.get('username')}}]);
+      this.router.navigate(['dashboard'],{queryParams: {username: this.loginForm.value.username}});
   }
 }
