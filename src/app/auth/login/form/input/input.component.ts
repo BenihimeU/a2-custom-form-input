@@ -8,6 +8,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class InputComponent implements OnInit {
   @Input() subname: string;
+  @Input() type: string;
   @Input() formobj: any;
 
   control:FormControl;

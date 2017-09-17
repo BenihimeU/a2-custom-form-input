@@ -35,6 +35,7 @@
 }
 .noUi-marker-vertical.noUi-marker{
   width: 7px;
+  height: 1px;
 }
 .noUi-marker-vertical.noUi-marker-large{
   width: 15px;

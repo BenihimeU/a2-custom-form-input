@@ -1,5 +1,5 @@
-<md-input-container>
-  <input mdInput type="text" [formControl]="control" required />
+<md-input-container class="example-full-width">
+  <input mdInput [type]="type || 'text'" [formControl]="control" required [placeholder]="subname"/>
   <md-hint [hidden]="control.pristine || control.valid">
     <span [hidden]="!control.errors?.required">
       This is required

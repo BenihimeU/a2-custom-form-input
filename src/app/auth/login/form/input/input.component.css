@@ -1,0 +1,9 @@
+/deep/ label.mat-input-placeholder{
+    text-transform: capitalize;
+}
+/deep/.mat-hint{
+    color:#f44336;
+}
+.example-full-width {
+  width: 100%;
+}

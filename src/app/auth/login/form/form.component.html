@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm">
+<form [formGroup]="loginForm" class="example-form">
   <div>
     <form-input [formobj]="loginForm" subname="username"></form-input>
     <form-input [formobj]="loginForm" subname="password"></form-input>
@@ -20,6 +20,3 @@
 <alert type="success" dismissible="true">
   <strong>Well done!</strong> You successfully read this important alert message.
 </alert>
-<div class="row col-lg-12">
-  <progressbar class="progress" [value]="stacked" max="100" animate="true"></progressbar>
-</div>

@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {Router, Data} from "@angular/router";
 
 @Component({
   selector: 'app-login-form',
@@ -22,9 +23,9 @@ export class FormComponent implements OnInit {
   step = 1;
   thumbLabel = false;
   value = 0;
-  vertical = true;
+  vertical = false;
 
-  constructor(public  formBuilder:FormBuilder) {
+  constructor(public  formBuilder:FormBuilder, private router: Router ) {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.compose([Validators.pattern('[a-zA-Z0-9]*'),Validators.required])],
       password: ['', Validators.compose([Validators.required,Validators.maxLength(10)])],
@@ -38,8 +39,6 @@ export class FormComponent implements OnInit {
 
 
   onLoginPress (){
-    if(this.loginForm.valid){
-      this.onLoginSuccess.emit(this.loginForm.value.username);
-    }
+      this.router.navigate(['dashboard'],{queryParams: {username: this.loginForm.value.username}});
   }
 }
