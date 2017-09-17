@@ -1,3 +1,58 @@
 .a2-page{
   padding: 10px;
 }
+.noUi-vertical{
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.noUi-vertical .noUi-handle,.noUi-vertical .noUi-handle:before, .noUi-vertical .noUi-handle:after{
+  top: -15px;
+  box-shadow: none;
+  outline: none;
+  height: 0px;
+}
+.noUi-handle-lower,.noUi-handle-upper{
+  width: 25px !important;
+  height: 25px !important;
+  box-shadow: none;
+  background-color: #000;
+  border: 0;
+  border-radius: 50% ;
+  background-size: contain;
+}
+.noUi-handle-lower{
+  left: -40px !important;
+  background-image: url("../assets/icons8-Right-50.png");
+}
+.noUi-handle-upper{
+  top: 0 !important;
+  left: 40px !important;
+  background-image: url("../assets/icons8-Up-50.png");
+}
+.noUi-pips-vertical{
+  padding: 0;
+}
+.noUi-marker-vertical.noUi-marker{
+  width: 7px;
+}
+.noUi-marker-vertical.noUi-marker-large{
+  width: 15px;
+}
+.noUi-base{
+  border-radius: 0px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00ff00+12,ff0000+39,ffffff+80 */
+  background: #00ff00; /* Old browsers */
+  background: -moz-linear-gradient(top, #00ff00 18%, #ff0000 47%, #ffffff 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00ff00 128%,#ff0000 47%,#ffffff 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00ff00 18%,#ff0000 47%,#ffffff 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff00', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.noUi-connect{
+  border-radius: 0;
+  background: transparent;
+  border: 0px;
+  border-top: 1px solid black ;
+  border-bottom: 1px solid black;
+}

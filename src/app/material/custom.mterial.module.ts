@@ -34,6 +34,7 @@ import {
 } from "@angular/material";
 import {FormsModule} from "@angular/forms";
 import {Angular2FontawesomeModule} from "angular2-fontawesome";
+import {AlertModule, ProgressbarModule} from "ngx-bootstrap";
 
 @NgModule({
   declarations: [
@@ -71,7 +72,9 @@ import {Angular2FontawesomeModule} from "angular2-fontawesome";
     MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    AlertModule.forRoot(),
+    ProgressbarModule.forRoot()
   ],
 
   exports: [
@@ -106,7 +109,9 @@ import {Angular2FontawesomeModule} from "angular2-fontawesome";
     MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    AlertModule,
+    ProgressbarModule
   ],
   providers: []
 })
