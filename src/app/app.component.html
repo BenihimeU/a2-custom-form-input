@@ -1,14 +1,7 @@
 <app-header></app-header>
-<div class="a2-page" style="display:none">
+<div class="a2-page">
   <router-outlet></router-outlet>
 </div>
-    <nouislider
-      #rangeSlider
-      [config] ="sideSlideConfig"
-      [(ngModel)]="someRange"
-      (change) = 'captureChange($event)'
-      (start) = 'startRange($event, rangeSlider)'
-    >
-    </nouislider>
+<my-slider></my-slider>
 
 

@@ -2,18 +2,6 @@
   <div>
     <form-input [formobj]="loginForm" subname="username"></form-input>
     <form-input [formobj]="loginForm" subname="password"></form-input>
-    <md-slider
-      class="example-margin"
-      [disabled]="disabled"
-      [invert]="invert"
-      [max]="max"
-      [min]="min"
-      [step]="step"
-      [thumb-label]="thumbLabel"
-      [tick-interval]="tickInterval"
-      [value]="value"
-      [vertical]="vertical">
-    </md-slider>
     <button md-raised-button type="submit" (click)="onLoginPress($event)">Submit</button>
   </div>
 </form>

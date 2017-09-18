@@ -1,1 +1,7 @@
-<div> my slider </div>
+    <nouislider
+      #rangeSlider
+      [config] ="sideSlideConfig"
+      [(ngModel)]="someRange"
+      (change) = 'captureChange($event)'
+    >
+    </nouislider>
